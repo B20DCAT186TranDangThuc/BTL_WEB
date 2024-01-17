@@ -1,0 +1,209 @@
+@charset "UTF-8";
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Roboto', sans-serif;
+	background-color: #f5f5f5;
+}
+
+.container {
+	padding: 120px 20px 0px 20px;
+}
+
+.title {
+	height: 100px;
+	text-align: center;
+	padding: 25px;
+	background-color: #fff;
+	margin-bottom: 40px;
+}
+
+.div-action {
+	width: 100%;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	margin: 20px 0;
+}
+
+select {
+	/* text-indent: 20px; */
+	/* box-sizing: border-box; */
+	/* border-radius: 20px; */
+	/* width: 150px; */
+	padding: 5px;
+	font-size: 16px;
+}
+
+.search-admin-input {
+	width: 270px;
+	padding: 8px;
+	font-size: 16px;
+}
+
+.btn {
+	text-align: center;
+	width: 100px;
+	padding: 8px 20px;
+	font-size: 16px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	color: #fff;
+	background-color: #4CAF50;
+	text-decoration: none;
+}
+
+table {
+	width: 100%;
+	border-collapse: collapse;
+	border: 1px solid #ddd;
+}
+
+table th, table td {
+	padding: 8px;
+	text-align: center;
+	border-bottom: 1px solid #ddd;
+}
+
+tr {
+	height: 50px;
+}
+
+table th {
+	background-color: #4CAF50;
+	color: #fff;
+}
+
+table th:first-child {
+	border-top-left-radius: 5px;
+}
+
+table th:last-child {
+	border-top-right-radius: 5px;
+}
+
+table tr:last-child td:first-child {
+	border-bottom-left-radius: 5px;
+}
+
+table tr:last-child td:last-child {
+	border-bottom-right-radius: 5px;
+}
+
+table tr:nth-child(even) {
+	background-color: #f2f2f2;
+}
+
+table tr:hover {
+	background-color: #ddd;
+}
+
+.btn:hover {
+	background-color: #3e8e41;
+}
+
+.action-table {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.action-table a {
+	border-radius: 12px;
+	margin: 8px;
+	padding: 12px 16px;
+	color: #fff;
+	background-color: #3e8e41;
+	text-decoration: none;
+}
+
+.action-table button {
+	border-radius: 12px;
+	margin: 8px;
+	padding: 12px 16px;
+	color: #fff;
+	background-color: #3e8e41;
+	border: none;
+	cursor: pointer;
+}
+
+.action-table a:hover i {
+	color: #ccc;
+}
+
+.action-table button:hover i {
+	color: #ccc;
+}
+
+.action-table .update {
+	background-color: #6EC8F7;
+}
+
+.action-table .delete {
+	background-color: #F44336;
+}
+
+.alert {
+	position: fixed;
+	top: 30px;
+	right: -100%;
+	transform: translate(-50%, -50%);
+	background-color: rgb(120, 190, 29);
+	border-radius: 5px;
+	padding: 10px 20px;
+	z-index: 1000;
+	display: none;
+	animation: slideInRight 0.5s ease forwards;
+}
+
+.button-sort {
+	/* gap: 30px; */
+	display: flex;
+	gap: 30px;
+}
+
+.btn-sort {
+	padding: 10px;
+	cursor: pointer;
+	background-color: #3498db;
+	color: #fff;
+	border: none;
+	border-radius: 5px;
+	transition: background-color 0.3s;
+}
+
+.btn-sort:hover {
+	background-color: #2980b9;
+}
+
+.btn-sort:active {
+	background-color: #1f618d;
+}
+
+.btn-sort.choose {
+	background-color: #2ecc71;
+}
+
+@keyframes slideInRight { 0% {
+	right: -100%;
+}
+
+100%
+{
+right:0;
+}
+}
+@keyframes slideOutLeft { 0% {
+	right: 0;
+}
+100%
+{
+right:-100%;
+}
+}

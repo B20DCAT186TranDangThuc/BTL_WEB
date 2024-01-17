@@ -1,0 +1,129 @@
+@charset "UTF-8";
+body {
+	font-family: 'Roboto', sans-serif;
+	background-color: #E8E8E8;
+}
+.container {
+	padding-top: 130px;
+}
+
+.control_dash {
+	justify-content: space-between;
+	margin-right: 20px;
+	margin-left: 20px;
+}
+table th:first-child {
+    border-top-left-radius: 5px;
+}
+table th:last-child {
+    border-top-right-radius: 5px;
+}
+.content_table {
+	margin-top: 10px;
+}
+
+.sanpham_table {
+	width: 100%;
+	border-collapse: collapse;
+}
+
+.sanpham_table td {
+	
+	text-align: center;
+	font-size:15px;
+}
+
+.sanpham_table img {
+	display: block;
+	box-sizing: border-box;
+	max-width: 100%;
+	padding: 5px;
+	border-radius: 12px;
+}
+
+.sanpham_table th {
+	padding: 20px;
+	background-color: #4CAF50;
+	color:#fff;
+	border:none;
+	text-align: center;
+}
+.sanpham_table tbody tr{
+	background-color: white;
+	
+}
+.sanpham_table tbody tr:nth-child(even) {
+	background-color: #EEEEEE;
+}
+
+.sanpham_table tbody tr:hover {
+	background-color: #CCCCCC;
+}
+
+.button-product {
+	display: flex;
+	justify-content: center;
+}
+
+input[type="checkbox"] {
+	width: 15px;
+	height: 15px;
+}
+
+
+.button {
+	padding: 8px;
+	display: inline-block;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	text-align: center;
+	transition: background-color 0.3s;
+}
+
+.add-button {
+	margin-right: 10px;
+	background-color: #7A378B;
+	color: white;
+}
+
+.delete-button {
+	background-color: #e74c3c;
+	color: #fff;
+}
+
+.stats-button {
+	background-color: #3498db;
+	color: #fff;
+	margin-right: 10px;
+	margin-left: 10px;
+}
+
+.export-button {
+	background-color: #63682d;
+	background-color:#8B4513;
+	margin-right: 10px;
+	color: #fff;
+}
+
+.detail-button {
+	margin-right: 10px;
+	background-color: hsl(288, 74%, 67%);
+	background-color:#7A378B;
+	color: #fff;
+}
+
+.edit-button {
+	margin-right: 10px;
+	background-color: #7077da;
+	color: #fff;
+}
+
+.add-button:hover, .delete-button:hover, .stats-button:hover,
+	.export-button:hover, .detail-button:hover, .edit-button:hover {
+	background-color: #463b3b94;
+}
+#name-product{
+	padding-left:10px;
+	text-align: left;
+}

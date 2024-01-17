@@ -1,0 +1,160 @@
+@charset "UTF-8";
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #f5f5f5;
+	font-family: 'Roboto', sans-serif;
+}
+
+.container {
+	padding-top: 200px;
+	width: 100%;
+}
+
+.title {
+	width: 100%;
+	text-align: center;
+	margin-bottom: 50px;
+}
+
+.menu {
+	display: flex;
+	justify-content: center;
+	background-color: #fff;
+	padding: 20px;
+	background-image: linear-gradient(to right, #c6ffdd, #fbd786, #f7797d);
+}
+
+.menu a {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	flex-direction: column;
+	text-decoration: none;
+	width: 180px;
+	color: #000;
+	font-size: 20px;
+	margin: 0 30px;
+	padding: 10px 20px;
+	border-radius: 5px;
+	transition: all 0.3s ease-in-out;
+}
+
+.menu a span {
+	margin-top: 10px;
+}
+
+.menu a:hover {
+	font-weight: bold;
+}
+
+.menu a:hover img {
+	transform: scale(1.1);
+}
+
+.active {
+	font-weight: bold;
+	border-bottom: 8px solid #0F71A5;
+}
+
+.products {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin-top: 50px;
+}
+
+.sort {
+	margin-left: 20px;
+	margin-bottom: 20px;
+}
+
+.sort select {
+	width: 200px;
+	padding: 5px 10px;
+	border-radius: 5px;
+	border: 1px solid #000;
+	outline: none;
+}
+
+.list-product {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.product {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 300px;
+	margin: 20px;
+	padding: 20px;
+	border-radius: 5px;
+	background-color: #fff;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+	transition: all 0.3s ease-in-out;
+}
+
+.btn-chitet {
+	position: absolute;
+	top: 30%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: #fff;
+	text-decoration: none;
+	padding: 5px 10px;
+	border-radius: 16px;
+	background-color: #2ecc71;
+	opacity: 0; /* Ẩn ban đầu */
+	transition: opacity 0.3s ease; /* Thêm hiệu ứng chuyển động */
+}
+
+
+.product-name {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    height: 50px;
+    width: 200px;
+    margin-top: 12px;
+}
+
+.product:hover img {
+	filter: blur(5px); /* Làm mờ ảnh khi hover */
+}
+
+.product:hover .btn-chitet {
+	opacity: 1; /* Hiện nút khi hover */
+}
+
+.list-btn {
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+	margin-top: 20px;
+}
+
+.btn {
+	display: flex;
+	align-items: center;
+	text-align: center;
+	width: 120px;
+	color: #fff;
+	text-decoration: none;
+	padding: 10px 20px;
+	border-radius: 5px;
+	transition: all 0.3s ease-in-out;
+	background-color: #2ecc71;
+}
+
+.list-btn a:hover {
+	font-size: 16px;
+	font-weight: bold;
+}

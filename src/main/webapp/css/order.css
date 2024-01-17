@@ -1,0 +1,300 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Poppins', sans-serif;
+	background: #f2f2f2;
+	display: flex;
+	justify-content: center;
+}
+
+.container {
+	margin-top: 120px;
+	width: 70%;
+	padding: 30px;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	background-color: #fff;
+}
+
+.header-title {
+	text-align: center;
+}
+
+.header-title img {
+	width: 100px;
+	height: 100px;
+	margin-bottom: 20px;
+}
+
+.header-title h1 {
+	font-size: 2.5rem;
+	font-weight: 600;
+	color: #333;
+}
+
+.header-title p {
+	font-size: 1.2rem;
+	font-weight: 300;
+	color: #888;
+}
+
+.infomation {
+	margin-top: 30px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	width: 100%;
+}
+
+.customer-info {
+	width: 55%;
+	margin: 0 auto;
+	padding: 20px;
+	border: 1px solid #ccc;
+	border-radius: 8px;
+}
+
+.customer-info h2 {
+	font-size: 1.5em;
+	margin-bottom: 10px;
+}
+
+.box-input {
+	margin-top: 15px;
+}
+
+.box-input label {
+	display: block;
+	margin-bottom: 5px;
+}
+
+.box-input input, .box-input select {
+	width: 100%;
+	padding: 8px;
+	margin-bottom: 10px;
+	box-sizing: border-box;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+}
+
+.box-input select {
+	height: 34px;
+}
+
+/* Optional: Style placeholders for better visibility */
+.box-input input::placeholder, .box-input select::placeholder {
+	color: #999;
+}
+
+/* Thiết lập kiểu cho dropdown */
+select {
+	width: 100%;
+	padding: 8px;
+	margin-bottom: 10px;
+	box-sizing: border-box;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	appearance: none;
+	background: url('../images/select-icon.png') no-repeat right center;
+	/* Thêm mũi tên (icon) bên phải */
+	background-size: 18px;
+}
+
+/* Thiết lập kiểu khi di chuột qua dropdown */
+select:hover {
+	border-color: #999;
+}
+
+/* Thiết lập kiểu khi chọn dropdown */
+select:focus {
+	border-color: #555;
+	box-shadow: 0 0 5px rgba(85, 85, 85, 0.7);
+}
+
+/* Kiểu cho tùy chọn trong dropdown */
+select option {
+	padding: 12px;
+	background-color: #f8f8f8;
+	font-size: 16px;
+	color: #555;
+}
+
+/* Kiểu khi hover qua tùy chọn trong dropdown */
+select option:hover {
+	background-color: #ddd;
+}
+
+.order-info {
+	width: 40%;
+	margin: 0 auto;
+	padding: 20px;
+	border: 1px solid #ddd;
+	border-radius: 8px;
+}
+
+.order-info-title {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 15px;
+}
+
+.order-info-title .title {
+	font-size: 1.5em;
+}
+
+.quantity {
+	background-color: #4caf50;
+	color: white;
+	padding: 5px 10px;
+	border-radius: 4px;
+	font-weight: bold;
+}
+
+.list-order {
+	margin-bottom: 15px;
+}
+
+.order-info__item {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	border-bottom: 1px solid #ddd;
+	padding: 10px 0;
+}
+
+.product-info {
+	flex-grow: 1;
+}
+
+.name-product {
+	width: 250px;
+	font-weight: bold;
+	margin-bottom: 8px;
+	white-space: nowrap; /* Ngăn chặn xuống dòng */
+	overflow: hidden; /* Ẩn phần vượt quá độ rộng */
+	text-overflow: ellipsis; /* Hiển thị ba dấu chấm ở cuối */
+}
+
+.price {
+	color: #888;
+	display: inline;
+	border: none;
+	width: 100px;
+	padding: 8px;
+	outline: none;
+}
+
+input[type="number"] {
+	width: 50px;
+	padding: 5px;
+	margin: 0 5px;
+	box-sizing: border-box;
+}
+
+.product-total, .total-price {
+	outline: none;
+	font-weight: bold;
+	text-align: right;
+	width: 100px;
+	border: none;
+}
+
+.order-total {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.total-title {
+	font-weight: bold;
+	font-size: 1.2em;
+}
+
+.total-price {
+	outline: none;
+	color: #e44d26;
+	font-size: 1.2em;
+	font-weight: bold;
+	display: inline;
+}
+
+.list-btn {
+	width: 100%;
+	display: flex;
+	margin-top: 20px;
+	justify-content: center;
+}
+
+.btn {
+	padding: 10px 20px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	font-size: 16px;
+	margin: 20px;
+}
+
+.btn-back {
+	background-color: #ddd;
+	color: #333;
+}
+
+.btn-order {
+	background-color: #4caf50;
+	color: white;
+}
+
+/* Hover style for buttons */
+.btn:hover {
+	opacity: 0.8;
+}
+
+/* Optional: Active (clicked) style for buttons */
+.btn:active {
+	transform: translateY(2px);
+}
+
+.quantity-box {
+	display: flex;
+	align-items: center;
+	justify-content: left;
+}
+
+.decrease, .increase {
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	background-color: #4caf50;
+	color: #fff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+}
+
+.decrease:hover, .increase:hover {
+	background-color: #333;
+}
+
+.decrease {
+	margin-right: 10px;
+}
+
+.increase {
+	margin-left: 10px;
+}
+
+input[name="quantity"] {
+	width: 50px;
+	text-align: center;
+	border: none;
+	outline: none;
+	font-size: 16px;
+	font-weight: bold;
+}

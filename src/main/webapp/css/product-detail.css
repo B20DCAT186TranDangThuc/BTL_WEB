@@ -1,0 +1,367 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Roboto', sans-serif;
+	background-color: #f5f5f5;
+}
+
+.container {
+	padding-top: 120px;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.product {
+	width: 60%;
+	display: flex;
+	justify-content: center;
+	background-color: #fff;
+}
+
+#slider {
+	position: relative;
+	width: 50%;
+	margin: 20px auto;
+	text-align: center;
+}
+
+#largeImage {
+	width: 80%;
+	height: 400px;
+	object-fit: contain;
+}
+
+#thumbnailContainer {
+	display: flex;
+	justify-content: center;
+	margin-top: 10px;
+}
+
+.thumbnail {
+	width: 50px;
+	height: 50px;
+	margin: 0 5px;
+	cursor: pointer;
+	border: 2px solid transparent;
+	/* Default border color for thumbnails */
+	transition: border-color 0.3s ease-in-out;
+}
+
+.thumbnail:hover {
+	border-color: red; /* Border color on hover */
+}
+
+.thumbnail img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.product-info {
+	width: 100%;
+	padding: 20px;
+}
+
+.product-info h1 {
+	font-size: 30px;
+	font-weight: 500;
+	margin-bottom: 10px;
+	color: #B10E0E;
+}
+
+.product-info-simple {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 10px;
+	color: #ccc;
+}
+
+.price {
+	display: inline-block;
+	font-size: 20px;
+	font-weight: 500;
+	color: #B10E0E;
+}
+
+.discount {
+	color: #ccc;
+}
+
+.list-btn {
+	width: 100%;
+	display: flex;
+	margin-top: 20px;
+}
+
+.btn {
+	width: 200px;
+	border: none;
+	color: #fff;
+	padding: 20px;
+	font-weight: bold;
+	border-radius: 5px;
+	text-align: center;
+	margin: 20px;
+	text-decoration: none;
+	transition: all 0.3s ease-in-out;
+	background-color: #2ecc71;
+}
+
+.btn-add-cart {
+	background-color: #ccc;
+}
+
+.btn:hover {
+	cursor: pointer;
+	background-color: #27ae60;
+}
+
+/* Review */
+.product-review {
+	padding: 20px;
+	width: 60%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	background-color: #fff;
+	margin-top: 20px;
+}
+
+/* Style for the overall review container */
+.review {
+	padding-top: 20px;
+	width: 100%;
+	margin: auto;
+	font-family: Arial, sans-serif;
+}
+
+/* Style for each review item */
+.review-item {
+	border: 1px solid #ccc;
+	padding: 10px;
+	margin-bottom: 15px;
+}
+
+/* Style for customer name */
+.customer-name {
+	color: #333;
+	font-size: 18px;
+	margin-bottom: 8px;
+}
+
+.custommer-name {
+	display: inline-block;
+	margin-right: 8px;
+}
+
+.time-comment {
+	font-size: 12px;
+	color: #ccc;
+}
+
+.answer-comment {
+	margin-top: 20px;
+	margin-left: 20px;
+	font-size: 14px;
+	color: #555;
+}
+
+/* Style for review star rating */
+.review-star {
+	color: #f8c613; /* Change to your desired star color */
+	font-size: 16px;
+	margin-bottom: 8px;
+}
+
+/* Style for review text */
+.review-text {
+	color: #555;
+	font-size: 14px;
+	line-height: 1.5;
+}
+
+/* Style for the write-review form */
+.write-review {
+	width: 100%;
+	margin: auto;
+	font-family: Arial, sans-serif;
+}
+
+/* Style for the review textarea */
+.write-review textarea {
+	height: 100px;
+	width: 100%;
+	padding: 10px;
+	margin-bottom: 10px;
+	resize: none;
+	font-size: 18px; /* Increase the font size to your preference */
+}
+
+/* Style for the rating stars */
+.rating {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 10px;
+}
+
+.rating input {
+	display: none;
+}
+
+.rating label {
+	cursor: pointer;
+	font-size: 30px;
+	color: #ddd;
+	margin: 0 5px;
+}
+
+.rating label:before {
+	content: '\2605'; /* Unicode character for a solid star */
+}
+
+.rating input:checked ~ label {
+	color: #f8c613; /* Change to your desired star color */
+}
+
+/* Style for the submit button */
+.btn-review {
+	padding: 10px;
+	background-color: #27ae60;
+	color: #fff;
+	border: none;
+	cursor: pointer;
+	font-size: 16px;
+}
+
+/* More */
+.product-other-box {
+	margin-top: 20px;
+	width: 60%;
+}
+
+.booth {
+	position: relative;
+	margin: 0 auto;
+	width: 100%;
+	border-radius: 16px;
+	background-color: #fff;
+	margin-bottom: 30px;
+}
+
+.name-booth {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 10px;
+	font-size: 24px;
+	font-weight: bold;
+	border-bottom: 1px solid #ddd;
+}
+
+.see-more {
+	position: absolute;
+	right: 8px;
+	bottom: 50%;
+	transform: translateY(50%);
+	width: 50px;
+	height: 50px;
+	background-color: #2ecc71;
+	border-radius: 50%;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	transition: all 0.3s ease-in-out;
+}
+
+.see-more:hover {
+	transform: translateY(50%) scale(1.1);
+	filter: brightness(90%);
+}
+
+.see-more a {
+	color: #fff;
+	text-decoration: none;
+	font-size: 12px;
+}
+
+.list-product {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+.product-other {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 280px;
+	margin: 10px;
+	padding: 20px;
+	border-radius: 5px;
+	background-color: #fff;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+	transition: all 0.3s ease-in-out;
+}
+
+.btn-chitet {
+	position: absolute;
+	top: 30%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: #fff;
+	text-decoration: none;
+	padding: 5px 10px;
+	border-radius: 16px;
+	background-color: #2ecc71;
+	opacity: 0;
+	/* Ẩn ban đầu */
+	transition: opacity 0.3s ease;
+	/* Thêm hiệu ứng chuyển động */
+}
+
+.product-name {
+	height: 50px;
+	width: 200px;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+
+.product-other .btn {
+	display: flex;
+	align-items: center;
+	text-align: center;
+	width: 100px;
+	color: #fff;
+	text-decoration: none;
+	padding: 10px 10px;
+	border-radius: 5px;
+	transition: all 0.3s ease-in-out;
+	background-color: #2ecc71;
+}
+
+.product-other:hover img {
+	filter: blur(5px);
+	/* Làm mờ ảnh khi hover */
+}
+
+.product-other:hover .btn-chitet {
+	opacity: 1;
+	/* Hiện nút khi hover */
+}
+
+.list-btn a:hover {
+	font-size: 16px;
+	font-weight: bold;
+}

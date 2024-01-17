@@ -1,0 +1,154 @@
+@charset "UTF-8";
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #f5f5f5;
+	font-family: 'Roboto', sans-serif;
+}
+
+.container {
+	padding-top: 200px;
+	width: 100%;
+}
+
+.title {
+	width: 100%;
+	text-align: center;
+	margin-bottom: 50px;
+}
+
+.box-search {
+	width: 100%;
+	height: 250px;
+	display: flex;
+	margin-bottom: 50px;
+	background-image: linear-gradient(to right, #c6ffdd, #fbd786, #f7797d);
+	justify-content: center;
+	align-items: center;
+}
+
+.box-search input {
+	font-size: 16px;
+	width: 500px;
+	height: 50px;
+	padding: 0 20px;
+	border-radius: 8px;
+	border: 1px solid #000;
+	outline: none;
+}
+
+.box-search button {
+	width: 100px;
+	height: 50px;
+	margin-left: 20px;
+	border-radius: 5px;
+	border: none;
+	outline: none;
+	background-color: #2ecc71;
+	color: #fff;
+	font-size: 16px;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+.box-search img {
+	/* đặt ảnh sang bên phải */
+	position: absolute;
+	right: 12px;
+}
+
+.products {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin-top: 50px;
+}
+
+.sort {
+	margin-left: 20px;
+	margin-bottom: 20px;
+}
+
+.sort select {
+	width: 200px;
+	padding: 5px 10px;
+	border-radius: 5px;
+	border: 1px solid #000;
+	outline: none;
+}
+
+.list-product {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.product {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 300px;
+	margin: 20px;
+	padding: 20px;
+	border-radius: 5px;
+	background-color: #fff;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+	transition: all 0.3s ease-in-out;
+}
+
+.btn-chitet {
+	position: absolute;
+	top: 30%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: #fff;
+	text-decoration: none;
+	padding: 5px 10px;
+	border-radius: 16px;
+	background-color: #2ecc71;
+	opacity: 0;
+	/* Ẩn ban đầu */
+	transition: opacity 0.3s ease;
+	/* Thêm hiệu ứng chuyển động */
+}
+
+.product:hover img {
+	filter: blur(5px);
+	/* Làm mờ ảnh khi hover */
+}
+
+.product:hover .btn-chitet {
+	opacity: 1;
+	/* Hiện nút khi hover */
+}
+
+.list-btn {
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+	margin-top: 20px;
+}
+
+.btn {
+	display: flex;
+	align-items: center;
+	text-align: center;
+	width: 120px;
+	color: #fff;
+	text-decoration: none;
+	padding: 10px 20px;
+	border-radius: 5px;
+	transition: all 0.3s ease-in-out;
+	background-color: #2ecc71;
+}
+
+.list-btn a:hover {
+	font-size: 16px;
+	font-weight: bold;
+}

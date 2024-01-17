@@ -1,0 +1,129 @@
+@charset "UTF-8";
+
+.container {
+	padding: 130px 0px 0px 0px;
+}
+
+.title_dash {
+	display: flex;
+	padding-left: 30px;
+	padding-right: 30px;
+	justify-content: space-between;
+}
+
+.title_dash h1 {
+	font-size: 30px;
+}
+
+.title_dash input {
+	height: 30px;
+	width: 180px;
+	padding: 5px;
+	border-radius: 10px;
+	margin-top: 12px;
+}
+
+.control_dash {
+	justify-content: space-between;
+	margin-right: 20px;
+	margin-left: 20px;
+}
+
+.button {
+	padding: 8px;
+	display: inline-block;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	text-align: center;
+	transition: background-color 0.3s;
+}
+
+.add-button {
+	margin-right: 10px;
+	background-color: #4CAF50;
+	color: white;
+}
+
+.stats-button {
+	background-color: #3498db;
+	color: #fff;
+	margin-right: 10px;
+	margin-left: 10px;
+}
+
+.delete-button {
+	background-color: #e74c3c;
+	color: #fff;
+}
+
+.reply-button {
+	background-color: #3498db;
+	color: #fff;
+}
+
+.export-button {
+	background-color: #63682d;
+	margin-right: 10px;
+	color: #fff;
+}
+
+.edit-button {
+	margin-right: 10px;
+	background-color: #7077da;
+	color: #fff;
+}
+
+.detail-button {
+	margin-right: 10px;
+	background-color: hsl(288, 74%, 67%);
+	color: #fff;
+}
+
+.delete-button:hover, .reply-button:hover, .stats-button:hover,
+	.export-button:hover {
+	background-color: #463b3b94;
+}
+
+.content_table {
+	margin-right: 10px;
+	margin-top: 10px;
+}
+
+.binhluan_table {
+	width: 100%;
+	border-collapse: collapse;
+}
+
+.binhluan_table td, .binhluan_table th {
+	text-align: center;
+}
+.binhluan_table td{
+	padding-bottom: 5px;
+	padding-top: 5px
+}
+
+
+.binhluan_table th {
+	padding: 20px;
+	background-color: #4CAF50;
+	color:#fff;
+	border:none;
+}
+
+.binhluan_table tbody tr:nth-child(even) {
+	background-color: #EEEEEE;
+}
+
+.binhluan_table tbody tr:hover {
+	background-color: #CCCCCC;
+}
+
+.btn-action{
+	display: flex;
+	justify-content: space-around;
+}
+
+
+
+

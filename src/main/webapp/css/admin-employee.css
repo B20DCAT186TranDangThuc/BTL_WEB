@@ -1,0 +1,157 @@
+@charset "UTF-8";
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Roboto', sans-serif;
+	background-color: #f5f5f5;
+}
+
+.container {
+	padding-top: 120px;
+}
+
+
+.div-action {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 20px;
+}
+.div-filter{
+	gap: 40px;
+	display:flex;	
+}
+select {
+	font-size: 16px;
+	padding: 8px;
+}
+
+.search-admin-input {
+	width: 300px;
+	padding: 8px;
+	font-size: 16px;
+}
+
+.btn {
+	font-size: 16px;
+	text-align: center;
+	width: 100px;
+	padding: 8px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	color: #fff;
+	background-color: #4CAF50;
+}
+
+.btn:hover {
+	background-color: #3e8e41;
+}
+
+.btn.search{
+	background-color: #203d80e0;
+}
+.btn.search:hover {
+	background-color: #203d80;
+}
+
+
+.button-sort {
+	display: flex;
+	gap: 10px;
+}
+
+.btn-sort {
+	font-size: 16px;
+	padding: 10px;
+	cursor: pointer;
+	background-color: #3498db;
+	color: #fff;
+	border: none;
+	border-radius: 5px;
+	transition: background-color 0.3s;
+}
+
+.btn-sort:hover {
+	background-color: #2980b9;
+}
+
+.btn-sort:active {
+	background-color: #1f618d;
+}
+
+.btn-sort.choose {
+	background-color: #2ecc71;
+}
+
+table {
+	width: 100%;
+	border-collapse: collapse;
+}
+
+table td {
+	text-align: center;
+}
+
+table th {
+	font-size: 18px;
+	height: 50px;
+	background-color: #4CAF50;
+	color: #fff;
+}
+
+table tr:nth-child(even) {
+	background-color: #ecebeb;
+}
+
+table tr:hover {
+	background-color: #ddd;
+}
+
+.action-table {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.action-table a {
+	border-radius: 12px;
+	margin: 8px;
+	padding: 12px 16px;
+	color: #fff;
+	background-color: #3e8e41;
+	text-decoration: none;
+}
+
+.action-table button {
+	border-radius: 12px;
+	margin: 8px;
+	font-size: 16px;
+	padding: 12px 16px;
+	color: #fff;
+	background-color: #3e8e41;
+	border: none;
+	cursor: pointer;
+}
+
+.action-table a:hover i {
+	color: #ccc;
+}
+
+.action-table button:hover i {
+	color: #ccc;
+}
+
+.action-table .update {
+	background-color: #6EC8F7;
+}
+
+.action-table .delete {
+	background-color: #F44336;
+}
+
